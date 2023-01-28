@@ -1,0 +1,38 @@
+<!doctype HTML>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>Prototype</title>
+</head>
+<style>
+    .black-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+    }
+    
+    .text {
+        position: relative;
+    }
+    
+    button#toggle-black-box {
+        position: relative;
+    }
+    button#toggle-black-box:checked + .black-box {
+        display: block
+    }
+    </style>
+<body>
+<p class="text">Text</p>
+    <button id="toggle-black-box">Toggle Black Box</button>
+    <div class="black-box" style="display: none"></div>
+
+</body>
+</html>
+
+
+
