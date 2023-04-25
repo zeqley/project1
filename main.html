@@ -94,7 +94,17 @@
             text-align: center;
             margin-top: 200px;
             color: white;">Welcome</h1>
-        <script src="script.js"></script>
+        <script>
+          
+        function checkLogin() {
+            let loggedIn = sessionStorage.getItem("loggedIn");
+            if (loggedIn !== "true") {
+                location.href = "./index.html";
+            }
+        }
+
+        checkLogin();
+        </script>
 
 </body>
 </html>
